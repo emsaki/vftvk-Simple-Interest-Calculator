@@ -1,4 +1,22 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black; /*set body background to black*/
+    }
+h1{
+    color: grey; /*set text color to grey and font to verdana*/
+    font-family: verdana;
+    }
+
+.maindiv{
+    background-color: white; /* set properties for main div*/
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    align: center;
+}
+
+.highlightme {
+    background-color:#FFFF00;
+    }
+
 
 
