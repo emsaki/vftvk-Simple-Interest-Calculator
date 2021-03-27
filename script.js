@@ -1,15 +1,20 @@
 /* the function to compute Interest */
 function compute() 
 {
-    var principal = document.getElementById("principal").value;
-    if(principal<=0){
+    var principal = document.getElementById("principal");
+    var years = document.getElementById("years");
+    var rate = document.getElementById("rate");
+    
+    if(principal.value<=0){
         alert("Enter a positive number");
         principal.focus();
-    }
-    var rate = document.getElementById("rate").value;
-    var years = document.getElementById("years").value;
-    var interest = principal * years * rate / 100;
-
+        return false;
+    }if (principal.value == "") {
+        alert("Enter a positive number");
+        principal.focus();
+        return false;
+    } else {     
+    var interest = principal.value * years.value * rate.value / 100;
     var d = new Date();  //get the current date
     futureyear = d.getFullYear() + parseInt(years); //get the current year and add no. of 
                                                     //years to compute the respective year
@@ -20,6 +25,7 @@ function compute()
     " at an Interest of " + rate + "%.<br/>" +
     "You will receive an amount of " + interest + ",<br/>" +
     ", in the year " + futureyear + ".";
+    }
     
 }
 
@@ -28,5 +34,4 @@ function readslider(){
         slidespan = document.getElementById("sliderate");
         slidespan.innerHTML = slider.value + " %";   
 }
-
         
