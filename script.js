@@ -5,15 +5,11 @@ function compute()
     var years = document.getElementById("years");
     var rate = document.getElementById("rate");
     
-    if(principal.value<=0){
+    if(principal.value <=0){
         alert("Enter a positive number");
         principal.focus();
         return false;
-    }if (principal.value == "") {
-        alert("Enter a positive number");
-        principal.focus();
-        return false;
-    } else {     
+    }else {     
     var interest = principal.value * years.value * rate.value / 100;
     var d = new Date();  //get the current date
     futureyear = d.getFullYear() + parseInt(years); //get the current year and add no. of 

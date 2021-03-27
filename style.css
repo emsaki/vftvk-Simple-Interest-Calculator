@@ -14,9 +14,17 @@ h1{
     align: center;
 }
 
-.highlightme {
-    background-color:#FFFF00;
-    }
+#principal {
+    margin-left: 40px;
+}
+
+#rate {
+    margin-left: 10px;
+}
+
+#years {
+    margin-left: 12px;
+}
 
 
 
