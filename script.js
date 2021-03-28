@@ -19,7 +19,7 @@ function compute()
     //Display the result of computation                                             
     document.getElementById("result").innerHTML = "If you deposit " + principal.value + ",<br/>" +
     " at an interest of " + rate.value + "%.<br/>" +
-    "You will receive an amount of " + interest + ",<br/>" +
+    "You will receive an amount of " + interest + "<br/>" +
     ", in the year " + futureyear + ".";
     }
     
