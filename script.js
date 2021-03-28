@@ -30,4 +30,8 @@ function readslider(){
         slidespan = document.getElementById("sliderate");
         slidespan.innerHTML = slider.value + " %";   
 }
+
+function clearForm(){
+    document.getElementById("myform").reset();
+}
         
